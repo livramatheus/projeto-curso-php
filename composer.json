@@ -1,0 +1,19 @@
+{
+    "name": "livramatheus/folha",
+    "description": "Projeto desenvolvido para o Curso PHP - Desenvolvendo Jovens Talentos.",
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/"
+        },
+        "files": [
+            "src/Config/cookie.php",
+            "src/Config/env.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "livramatheus"
+        }
+    ],
+    "require": {}
+}
