@@ -38,11 +38,7 @@ require __DIR__ . './vendor/autoload.php';
                 <a class="btn main-btn big-btn" href="consultar.php">Visualizar Folha de Pagamento</a>
             </div>
             <div class="img-home" 
-                style="
-                background: url(images/folha_<?= $x ?>.svg);
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: 60%;">
+                style="background: url(images/folha_<?= $x ?>.svg); background-repeat: no-repeat; background-position: center; background-size: 60%;">
             </div>
         </div>
         <?php Src\Componentes\Footer::render(); ?>

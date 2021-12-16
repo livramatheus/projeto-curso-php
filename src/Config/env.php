@@ -1,4 +1,2 @@
 <?php
-putenv('DB_NAME=jt');
-putenv('DB_USER=postgres');
-putenv('DB_PASS=123');
+putenv('DATABASE_URL=postgres://postgres:123@localhost:5432/jt');

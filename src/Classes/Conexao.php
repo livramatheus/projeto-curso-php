@@ -2,12 +2,17 @@
 
 namespace Src\Classes;
 use PDO;
-use Src\Classes\Conexao;
 
 class Conexao {
 
     public function getConexao() {
-        return new PDO('pgsql:host=localhost;dbname=' . getenv('DB_NAME'), getenv('DB_USER'), getenv('DB_PASS'));
+        $x = explode('@', getenv('DATABASE_URL'));
+
+        $y = explode(':', $x[0]);
+        $z = explode(':', $x[1]);
+        $a = explode('/', $z[1]);
+        
+        return new PDO('pgsql:host=' .$z[0]. ';dbname=' . $a[1], str_replace('//', '', $y[1]), $y[2]);
     }
 
 }
