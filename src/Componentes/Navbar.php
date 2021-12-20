@@ -14,17 +14,17 @@ class Navbar {
         ob_start();
 
         echo '<nav class="navbar">';
-        echo '    <a class="logo" href="index.php">';
+        echo '    <a class="logo" href="?p=home">';
         echo '        <img src="./images/logo.svg" alt="Logo"/>';
         echo '        <p>Prefeitura Municipal de <span class="nome-municipio">Um Lugar Fictício</span></p>';
         echo '    </a>';
         echo '    <div class="nav-menu">';
-        echo '        <a href="index.php">Início</a>';
-        echo '        <a href="cidades.php">Cidades</a>';
-        echo '        <a href="cargos.php">Cargos</a>';
-        echo '        <a href="funcionarios.php">Funcionários</a>';
-        echo '        <a href="calcular.php">Calcular Pagamento</a>';
-        echo '        <a href="consultar.php">Visualizar Pagamento</a>';
+        echo '        <a href="?p=home">Início</a>';
+        echo '        <a href="?p=cidades">Cidades</a>';
+        echo '        <a href="?p=cargos">Cargos</a>';
+        echo '        <a href="?p=funcionarios">Funcionários</a>';
+        echo '        <a href="?p=calcular">Calcular Pagamento</a>';
+        echo '        <a href="?p=consultar">Visualizar Pagamento</a>';
         echo '        <img src="images/' . $icon . '.svg" alt="dark_theme" class="theme-btn"/>';
         echo '    </div>';
         echo '</nav>';

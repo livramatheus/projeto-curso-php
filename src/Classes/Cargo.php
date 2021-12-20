@@ -64,7 +64,7 @@ class Cargo {
             echo '        <td>' .$oCargo->getCodigo(). '</td>';
             echo '        <td>' .$oCargo->getDescricao(). '</td>';
             echo '        <td>
-                              <form method="POST" action="?acao=deletar">
+                              <form method="POST" action="?p=cargos&acao=deletar">
                                   <button type="submit" name="reg" value="' .$oCargo->getCodigo(). '">
                                       <img src="images/delete.svg" />
                                   </button>
@@ -78,7 +78,7 @@ class Cargo {
     
     public function renderizaForm() {
         echo '<h2>Cadastro de Cargos</h2>';
-        echo '<form class="form" method="POST" action="?acao=cadastrar">';
+        echo '<form class="form" method="POST" action="?p=cargos&acao=cadastrar">';
         echo '    <div class="item-form">';
         echo '        <label for="descricao">Nome do Cargo</label>';
         echo '        <input type="text" id="descricao" name="descricao" placeholder="Digite aqui..."/>';

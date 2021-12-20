@@ -68,7 +68,7 @@ class Pagamento {
         echo '<div class="small-card">';
         echo '    <div>';
         echo '        <h2>Consulta de Pagamento</h2>';
-        echo '        <form class="form small-form" method="POST" action="?acao=consultar">';
+        echo '        <form class="form small-form" method="POST" action="?p=consultar&acao=consultar">';
         echo '            <div class="item-form form-half">';
         echo '                <label for="mes">Mês</label>';
         echo '                <select name="mes" id="mes" required >';
@@ -89,7 +89,7 @@ class Pagamento {
         echo '            </div>';
         echo '            <div class="item-form form-half">';
         echo '                <label for="ano">Ano</label>';
-        echo '                <input type="number" id="ano" name="ano" required placeholder="Digite aqui..."/>';
+        echo '                <input type="number" id="ano" name="ano" min="1900" max="2400" required placeholder="Digite aqui..."/>';
         echo '            </div>';
         echo '            <div class="item-form form-full">';
         echo '                <label for="matricula">Matrícula Funcionário</label>';
@@ -113,7 +113,7 @@ class Pagamento {
     public function renderizaForm() {
         echo '<div>';
         echo '    <h2>Lançamento de Folha de Pagamento</h2>';
-        echo '    <form class="form small-form" method="POST" action="?acao=lancar">';
+        echo '    <form class="form small-form" method="POST" action="?p=calcular&acao=lancar">';
         echo '        <div class="item-form form-half">';
         echo '            <label for="mes">Mês</label>';
         echo '            <select id="mes" name="mes" required>';
@@ -134,7 +134,7 @@ class Pagamento {
         echo '        </div>';
         echo '        <div class="item-form form-half">';
         echo '            <label for="ano">Ano</label>';
-        echo '            <input type="number" id="ano" name="ano" required placeholder="Digite aqui..."/>';
+        echo '            <input type="number" id="ano" name="ano" min="1900" max="2400" required placeholder="Digite aqui..."/>';
         echo '        </div>';
         echo '        <div class="item-form form-full">';
         echo '            <label for="matricula">Matrícula Funcionário</label>';
