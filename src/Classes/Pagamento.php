@@ -89,7 +89,7 @@ class Pagamento {
         echo '            </div>';
         echo '            <div class="item-form form-half">';
         echo '                <label for="ano">Ano</label>';
-        echo '                <input type="number" id="ano" name="ano" required placeholder="Digite aqui..."/>';
+        echo '                <input type="number" id="ano" name="ano" min="1900" max="2400" required placeholder="Digite aqui..."/>';
         echo '            </div>';
         echo '            <div class="item-form form-full">';
         echo '                <label for="matricula">Matrícula Funcionário</label>';
@@ -134,7 +134,7 @@ class Pagamento {
         echo '        </div>';
         echo '        <div class="item-form form-half">';
         echo '            <label for="ano">Ano</label>';
-        echo '            <input type="number" id="ano" name="ano" required placeholder="Digite aqui..."/>';
+        echo '            <input type="number" id="ano" name="ano" min="1900" max="2400" required placeholder="Digite aqui..."/>';
         echo '        </div>';
         echo '        <div class="item-form form-full">';
         echo '            <label for="matricula">Matrícula Funcionário</label>';
