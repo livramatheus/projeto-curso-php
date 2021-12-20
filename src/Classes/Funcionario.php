@@ -159,7 +159,7 @@ class Funcionario {
             echo '        <td>' . $oFuncionario->getCidade()->getEstado() . '</td>';
             echo '        <td>' . $oFuncionario->getCargo()->getDescricao() . '</td>';
             echo '        <td>
-                              <form method="POST" action="?acao=deletar">
+                              <form method="POST" action="?p=funcionarios&acao=deletar">
                                   <button type="submit" name="reg" value="' .$oFuncionario->getMatricula(). '">
                                       <img src="images/delete.svg" />
                                   </button>
@@ -173,7 +173,7 @@ class Funcionario {
 
     public function renderizaForm() {
         echo '<h2>Cadastro de Funcionários</h2>';
-        echo '<form class="form flex-form" method="POST" action="?acao=cadastrar">';
+        echo '<form class="form flex-form" method="POST" action="?p=funcionarios&acao=cadastrar">';
         echo '    <div>';
         echo '        <div class="item-form">';
         echo '            <label for="nome">Nome</label>';

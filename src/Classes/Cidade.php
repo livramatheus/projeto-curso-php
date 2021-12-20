@@ -75,7 +75,7 @@ class Cidade {
             echo '        <td>' .$oCidade->getNome(). '</td>';
             echo '        <td>' .$oCidade->getEstado(). '</td>';
             echo '        <td>
-                              <form method="POST" action="?acao=deletar">
+                              <form method="POST" action="?p=cidades&acao=deletar">
                                   <button type="submit" name="reg" value="' .$oCidade->getCodigo(). '">
                                       <img src="images/delete.svg" />
                                   </button>
@@ -90,7 +90,7 @@ class Cidade {
     public function renderizaForm() {
         echo '<div>';
         echo '    <h2>Cadastro de Cidades</h2>';
-        echo '    <form class="form" method="POST" action="?acao=cadastrar">';
+        echo '    <form class="form" method="POST" action="?p=cidades&acao=cadastrar">';
         echo '        <div class="item-form">';
         echo '            <label for="nome">Cidade</label>';
         echo '            <input type="text" required id="nome" name="nome" placeholder="Digite aqui..."/>';

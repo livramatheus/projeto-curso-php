@@ -1,14 +1,14 @@
 <?php
-require __DIR__ . './vendor/autoload.php';
-use Src\Classes\Cargo;
+use Src\Classes\Funcionario;
 
-$oCargo = new Cargo();
-$oCargo->gerenciaAcoes();
+$oFuncionario = new Funcionario();
+$oFuncionario->gerenciaAcoes();
 ?>
+
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Cargos - Prefeitura Municipal</title>
+        <title>Funcionários - Prefeitura Municipal</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="style.css" rel="stylesheet" type="text/css"/>
@@ -18,15 +18,15 @@ $oCargo->gerenciaAcoes();
     <body class="<?= (isset($_COOKIE['isLight']) ? (filter_var($_COOKIE['isLight'], FILTER_VALIDATE_BOOLEAN) == true ? '' : 'dark') : '' ) ?>" >
         
         <?php Src\Componentes\Navbar::render(); ?>
-        
-        <div class="flex-card">
-            <div>
-                <?php $oCargo->renderizaForm(); ?>
-            </div>
-            <div>
-                <?php $oCargo->renderizaTabela(); ?>
-            </div>
+
+        <div class="card-horizontal">
+            <?php $oFuncionario->renderizaForm(); ?>
         </div>
+
+        <div class="card-horizontal">
+            <?php $oFuncionario->renderizaTabela(); ?>
+        </div>
+        
         <?php Src\Componentes\Footer::render(); ?>
     </body>
 </html>

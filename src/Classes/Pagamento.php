@@ -68,7 +68,7 @@ class Pagamento {
         echo '<div class="small-card">';
         echo '    <div>';
         echo '        <h2>Consulta de Pagamento</h2>';
-        echo '        <form class="form small-form" method="POST" action="?acao=consultar">';
+        echo '        <form class="form small-form" method="POST" action="?p=consultar&acao=consultar">';
         echo '            <div class="item-form form-half">';
         echo '                <label for="mes">Mês</label>';
         echo '                <select name="mes" id="mes" required >';
@@ -113,7 +113,7 @@ class Pagamento {
     public function renderizaForm() {
         echo '<div>';
         echo '    <h2>Lançamento de Folha de Pagamento</h2>';
-        echo '    <form class="form small-form" method="POST" action="?acao=lancar">';
+        echo '    <form class="form small-form" method="POST" action="?p=calcular&acao=lancar">';
         echo '        <div class="item-form form-half">';
         echo '            <label for="mes">Mês</label>';
         echo '            <select id="mes" name="mes" required>';
