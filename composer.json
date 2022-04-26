@@ -6,8 +6,7 @@
             "Src\\": "src/"
         },
         "files": [
-            "src/Config/cookie.php",
-            "src/Config/env.php"
+            "src/Config/cookie.php"
         ]
     },
     "authors": [
