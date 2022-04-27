@@ -8,7 +8,7 @@ class Footer {
         ob_start();
 
         echo '<footer>';
-        echo '    <span>Projeto desenvolvido para o Curso PHP - Desenvolvendo Jovens Talentos.</span>';
+        echo '    <span>Projeto desenvolvido para o Curso PHP</span>';
         echo '</footer>';
 
         $content = ob_get_contents();
