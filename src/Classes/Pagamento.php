@@ -2,6 +2,7 @@
 
 namespace Src\Classes;
 
+use Exception;
 use PDO;
 use Src\Classes\Conexao;
 use Src\Classes\Funcionario;
@@ -172,7 +173,11 @@ class Pagamento {
             $this->getProventos(), $this->getDescontos()
         ];
 
-        $oTr->execute($aParams);
+        try {
+            $oTr->execute($aParams);
+        } catch (Exception $Exception) {
+            $this->renderizaMensagemErro("Ocorreu um erro ao lançar o pagamento com os parâmetros especificados.");
+        }
     }
 
     private function consultar() {
