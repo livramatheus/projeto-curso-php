@@ -1,13 +1,13 @@
 <h1 align="center">Projeto Curso PHP</h1>
 
 <blockquote>
-    <h6>Note for english speakers</h6>
+    <b>Note for english speakers</b>
     <p>
-        This project was used for teaching Junior devs basic PHP concepts for a company that I used to work for in Brazil. So, for that reason:
+        This is the project that I used for teaching basic PHP to Junior devs at a company that I used to work for here in Brazil, so:
     </p>
     <ul>
         <li>This project is only available in Brazilian Porgutuese.</li>
-        <li>The code was purposely simplified and could be developed in a better way for non teaching purposes.</li>
+        <li>The code was developed in a simplistic way for teaching purposes, putting aside more elaborate code patterns.</li>
     </ul>
     
 </blockquote>
@@ -73,18 +73,18 @@
 <div style="display: flex; flex-direction: column; gap: 0.2rem">
 
 <div style="display: flex; gap: 0.2rem">
-    <img alt="Desktop 1" title="Página inicial" src="./images/github/1_d.webp" height="240"/>
-    <img alt="Desktop 2" title="Cadastro de cidades" src="./images/github/2_d.webp" height="240"/>
+    <img alt="Desktop 1" title="Página inicial" src="./images/github/1_d.webp" height="230"/>
+    <img alt="Desktop 2" title="Cadastro de cidades" src="./images/github/2_d.webp" height="230"/>
 </div>
 
 <div style="display: flex; gap: 0.2rem">
-    <img alt="Desktop 3" title="Listagem de cargos" src="./images/github/3_d.webp" height="240"/>
-    <img alt="Desktop 4" title="Lançamento de folha de pagamento" src="./images/github/4_d.webp" height="240"/>
+    <img alt="Desktop 3" title="Listagem de cargos" src="./images/github/3_d.webp" height="230"/>
+    <img alt="Desktop 4" title="Lançamento de folha de pagamento" src="./images/github/4_d.webp" height="230"/>
 </div>
 
 <div style="display: flex; gap: 0.2rem">
-    <img alt="Desktop 5" title="Mensagem de erro" src="./images/github/5_d.webp" height="240"/>
-    <img alt="Desktop 6" title="Consulta de folha de pagamento" src="./images/github/6_d.webp" height="240"/>
+    <img alt="Desktop 5" title="Mensagem de erro" src="./images/github/5_d.webp" height="230"/>
+    <img alt="Desktop 6" title="Consulta de folha de pagamento" src="./images/github/6_d.webp" height="230"/>
 </div>
 
 </div>
