@@ -11,8 +11,14 @@ class Conexao {
         $y = explode(':', $x[0]);
         $z = explode(':', $x[1]);
         $a = explode('/', $z[1]);
-        
-        return new PDO('pgsql:host=' .$z[0]. ';dbname=' . $a[1], str_replace('//', '', $y[1]), $y[2]);
+
+        $host = $z[0];
+        $port = $a[0];
+        $pass = $y[2];
+        $user = str_replace('//', '', $y[1]);
+        $base = $a[1];
+
+        return new PDO("pgsql:host=$host;port=$port;dbname=$base;", $user, $pass);
     }
 
 }
