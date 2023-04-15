@@ -44,7 +44,7 @@
 
 <h2 id="live-demo-br">🌐 Live demo</h2>
 
-<p>Veja este projeto rodando no <a href="https://curso-php-folha.herokuapp.com/">Heroku</a></p>
+<em>O projeto não está disponível porque não foi encontrada nenhuma solução gratuita viável para hospedagem.</em>
 
 <h2 id="features-br">🔎 Funcionalidades</h2>
 
